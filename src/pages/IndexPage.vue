@@ -4,12 +4,6 @@
   </q-page>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import CounterComponent from 'components/CounterComponent.vue'
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'IndexPage',
-  components: { CounterComponent },
-})
 </script>
