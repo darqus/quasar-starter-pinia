@@ -4,7 +4,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [{ path: '', component: () => import('pages/LoginPage.vue') }],
   },
   {
     path: '/account',
@@ -17,7 +17,6 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/:catchAll(.*)*',
     component: () => import('layouts/MainLayout.vue'),
-    // component: () => import('pages/ErrorNotFound.vue'),
     children: [
       { path: '', component: () => import('pages/ErrorNotFound.vue') },
     ],
