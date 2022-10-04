@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Clicks on todos: {{ storeCounter.$state.counter }}</p>
+    <p>Counter: {{ storeCounter.$state.counter }}</p>
     <div class="flex q-px-md">
       <div class="row justify-center items-center content-center">
         <q-btn color="primary" label="+" @click="storeCounter.increment" />
