@@ -1,31 +1,29 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
+  <q-page class="row bg-blue items-center justify-evenly">
+    <div class="text-white text-center q-pa-md flex flex-center">
+      <div>
+        <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
+        <div class="text-h2" style="opacity: 0.4">
+          {{ t('errors.notFound') }}
+        </div>
 
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
+        <q-btn
+          class="q-mt-xl"
+          color="white"
+          text-color="blue"
+          unelevated
+          to="/"
+          :label="t('buttons.home')"
+          no-caps
+        />
+      </div>
     </div>
-  </div>
+  </q-page>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 
-export default defineComponent({
-  name: 'ErrorNotFound'
-});
+const { t } = useI18n()
 </script>
