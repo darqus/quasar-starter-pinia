@@ -32,9 +32,11 @@ module.exports = {
     {
       files: ['src/*.vue', 'src/**/*.vue', 'src/*.scss', 'src/**/*.scss'],
       rules: {
+        'rule-empty-line-before': 'always-multi-line',
         'unit-allowed-list': [
           'em',
           'rem',
+          'ms',
           's',
           '%',
           'px',
