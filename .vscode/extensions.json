@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
     "wayou.vscode-todo-highlight"
   ],
   "unwantedRecommendations": [
